@@ -1,11 +1,15 @@
 {
- "name": "backend-chai",
+  "name": "backend-chai",
   "version": "1.0.0",
   "description": "learing backend",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon src/index.js"
   },
   "author": "Aman",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
