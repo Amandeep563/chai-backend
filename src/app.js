@@ -21,6 +21,8 @@ app.use(cookieParser());
 import userRouter from "./routes/user.routes.js";
 
 //rountes declaration
-app.use("/api/v1/users", userRouter);
-
-export { app };
+app.use("/api/users", userRouter);
+app.get("/", (req, res) => {
+  res.status(200).json("nigga");
+});
+export default app;
